@@ -1,0 +1,24 @@
+<mvc:View
+	displayBlock="true"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page
+				showHeader="false">
+				<content>
+					<ObjectHeader
+						icon="sap-icon://person-placeholder" />
+					<Text
+						text="{app>/taskDescription}" />
+					<List
+						items="{/anubhavData/formItems}">
+						<items>
+							<DisplayListItem label="{property}" value="{value}" />
+						</items>
+					</List>
+ 				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
